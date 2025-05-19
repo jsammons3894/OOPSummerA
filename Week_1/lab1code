@@ -1,0 +1,13 @@
+#include <iostream>
+// Code for problem 1
+using namespace std;
+int main() {
+
+  std::cout << "  CCCC    OOOO    PPP \n";
+  std::cout << " C       O    O   P  P\n";
+  std::cout << "C       O      O  PPP \n";
+  std::cout << " C       O    O   P   \n ";
+  std::cout << "  CCCC    OOOO    P   \n";
+
+  return 0;
+}

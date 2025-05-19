@@ -22,7 +22,8 @@ int main() {
     std::cout << "5/2 is " << 5.0 / 2 << std::endl; // <<endl; to start a new line
 
     //to make an output float, you can use '5.0' instead of '5'
-
+    // We will be using git commands to submit our code
+    
     
     return 0;
 }
