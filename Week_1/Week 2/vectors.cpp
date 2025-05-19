@@ -8,7 +8,7 @@ int main () {
     v.push_back(7);
 
     std::cout << v.size();
-    
+
     print(v);
 
     return 0;
@@ -20,6 +20,7 @@ std::cout<<i<<' ';
 
     }
     std::cout << std:: endl;
+    
 }
 
 void rotateLeft(std::vector<int> v, ink k) {
