@@ -32,12 +32,12 @@ bool isVowel(char c) {
 
 int main(void) {
 
-    std::string s = '90 - 40:sArutciL)2.11 retpihC( sceseB ratneoP ,)7.21
+    std::string s = "90 - 40:sArutciL)2.11 retpihC( sceseB ratneoP ,)7.21
     ,6.21( sritcoV ,)7 ratpehC( syurri ,)6-ritpohC( snuetcneF ,)5-ratpahC( spaeL ,)4-
     ritpehC( sgnertS dne sratcurihC:sratpohC kiubtxeT)doksa ab llaw snuetsioq
     01( .skrim 01 :skreM lateT.setonom 02 raf ,sselC
     gnarad ,)yedsandiW( 5202/12/50 :ameT & otoD .ssalc yedsundiW roa ne 2 zAaQ aveh et
-    gnoog ire aw ,ridnamer kceuq e';
+    gnoog ire aw ,ridnamer kceuq e";
 
     std::reverse(s.begin(), s.end());
 
