@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
+#include <cctype>
 
 bool isVowel(char c) {
-        return c == 'a' || c == 'i' || c == 'o' || c == 'u';
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
      }
 
     string reverseVowels(string &s) {
@@ -22,7 +24,7 @@ bool isVowel(char c) {
 
             if (left < right) {
 
-                swap(s[left], s[right]);
+                std::swap(s[left], s[right]);
                 left++;
                 right--;
             }
@@ -32,7 +34,7 @@ bool isVowel(char c) {
 
 int main(void) {
 
-    std::string s = "90 - 40:sArutciL)2.11 retpihC( sceseB ratneoP ,)7.21
+    std::string s = R"90 - 40:sArutciL)2.11 retpihC( sceseB ratneoP ,)7.21
     ,6.21( sritcoV ,)7 ratpehC( syurri ,)6-ritpohC( snuetcneF ,)5-ratpahC( spaeL ,)4-
     ritpehC( sgnertS dne sratcurihC:sratpohC kiubtxeT)doksa ab llaw snuetsioq
     01( .skrim 01 :skreM lateT.setonom 02 raf ,sselC
