@@ -42,6 +42,7 @@ int main(void) {
     gnoog ire aw ,ridnamer kceuq e";
 
     std::reverse(s.begin(), s.end());
+    
 
 std::cout << s << std::endl;
 return 0;
