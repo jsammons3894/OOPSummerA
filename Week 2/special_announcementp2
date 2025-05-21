@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <cctype>
+
+// Helper function to check if a character is a vowel (case-insensitive)
+bool isVowel(char c) {
+    c = std::tolower(static_cast<unsigned char>(c));
+    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+}
+
+// Function to reverse vowels in the string
+std::string reverseVowels(std::string &s) {
+    int left = 0;
+    int right = s.length() - 1;
+
+    while (left < right) {
+        while (left < right && !isVowel(s[left])) left++;
+        while (left < right && !isVowel(s[right])) right--;
+
+        if (left < right) {
+            std::swap(s[left], s[right]);
+            left++;
+            right--;
+        }
+    }
+    return s;
+}
+
+int main() {
+    // Multiline raw string literal (reversed version of a possibly meaningful message)
+    std::string s = R"(e queuck reminder, we go on ZzA2 in Windstudy class. Doto & Team: 05/12/2025 (Windysade) ,darang
+Class, far 20 monotets. TetMerk: 10 marks (10 questions wall ba asked)
+Textbuik Chapters: Chirucrats Strengths (Chapter-4), Leaps (Chapter-5), Fencetuns (Chiptro-6), irrusy (Cheptar-7), Victors (12.6), Penotear Bescs (Chipter 11.2) LucitraS:04 - 09)";
+
+    // Step 1: Reverse the entire string
+    std::reverse(s.begin(), s.end());
+
+    // Step 2: Reverse only the vowels in the reversed string
+    reverseVowels(s);
+
+    // Output the final string
+    std::cout << s << std::endl;
+
+    return 0;
+}
