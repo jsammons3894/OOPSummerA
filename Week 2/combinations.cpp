@@ -16,6 +16,9 @@ void comb(int n_chars){
 
     std::String s (n_chars, 'A');
     comb_helper(s, n_chars, 0);
+
+    //1) think about permutations- ie, characters cannot be duplicates. Ie, check duplicates.
+    //2a, 2b) Add digits to the combinations and permutations
     }
 
 void comb_helper(std::string& s, int n_chars, int i) {
