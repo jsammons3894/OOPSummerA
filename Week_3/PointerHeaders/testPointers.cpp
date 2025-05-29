@@ -1,4 +1,5 @@
 #include "Pointers.h"
+#include <iostream>
 //create pointers variable
 
 int main (){
@@ -10,9 +11,12 @@ int main (){
     std::cout << p.getPint() << std::endl;
     std::cout << *p.getPint() << std::endl;
 
+    double d = 1.1;
+    double *pD = &d;
 
-
-
+    p.setPdouble(pD);
+    std::cout << p.getPdouble() << std::endl;
+    std::cout << *p.getPdouble() << std::endl;
 
     return 0;
 }
