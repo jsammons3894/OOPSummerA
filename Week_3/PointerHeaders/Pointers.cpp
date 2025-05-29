@@ -5,3 +5,18 @@ Pointers::Pointers() : pInt(nullptr), pDouble(nullptr) { //Syntax for implementi
 
 
 }
+
+int* Pointers::getPint() const{
+    return pInt;
+}
+
+void Pointers::setPint(int *pInt_) {
+    pInt = pInt_;
+}
+
+int* Pointers::getPdouble() const{
+    return pDouble;
+}
+void Pointers::setPdouble(int *pDouble_) {
+    pDouble = pDouble_;
+}
