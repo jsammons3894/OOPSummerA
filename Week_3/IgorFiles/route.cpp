@@ -2,6 +2,7 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
+#include "trip.h"
 
 class Route {
 private: //access specifier

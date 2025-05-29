@@ -1,7 +1,6 @@
 // Implementation of the class
 #include "Route.h"
 
-
 void Route::updateLength() {
     length = (source.empty() || destination.empty()) ? 0 : rand() % 900 + 75;
 }
