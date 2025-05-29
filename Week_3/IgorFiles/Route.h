@@ -5,7 +5,8 @@
 #include <cstdlib>
 #include <ctime>
 
-
+#ifndef ROUTE_H //inclusion guard
+#define ROUTE_H
 class Route {
 private: //access specifier
     std::string source;
@@ -34,3 +35,5 @@ public:
     // Print method
     void print();
 };
+
+#endif
