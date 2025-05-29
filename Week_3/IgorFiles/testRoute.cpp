@@ -26,6 +26,10 @@ int main() {
     Route route3 = Route(); //no-arg constructor
     Route route4(); //NOT AN OBJECT. Function prototype
 
+    //create a trip
+
+    Trip disney;
+
 
     return 0;
 }
