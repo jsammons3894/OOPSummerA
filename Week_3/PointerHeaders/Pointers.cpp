@@ -22,7 +22,7 @@ void Pointers::setPdouble(int *pDouble_) {
     pDouble = pDouble_;
 }
 
-double* Pointers::getPdouble() const {
+double Pointers::getPdouble() const {
     return pDouble;
 }
 
