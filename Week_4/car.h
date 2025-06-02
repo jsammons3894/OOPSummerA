@@ -7,9 +7,11 @@ class CAR {
     //print model
     void printInfo() const;
     
-}
+
 private:
     std::string make;
     std::string make;
     int year;
     double MPG;
+};
+    #endif
