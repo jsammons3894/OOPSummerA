@@ -1,5 +1,6 @@
 #include "car.h"
 #include <iostream>
+#include <string>
 
 Car::Car(std::string make_, std::string model_, int year_, double MPG_){
     //get functions?
