@@ -3,8 +3,9 @@
 
 class Dealer{
 public:
-    std::Vector<Car> inventory;
+    std::vector<Car> inventory;
     void showInventory() const;
     void addCar(const Car& car); //adds car to inventory of dealer
 };
 
+#endif
