@@ -15,5 +15,6 @@ void Car::printInfo() const {
         std::cout << model << std::endl;
         std::cout << year << std::endl;
         std::cout << MPG << std::endl;
-
 }
+
+double Car::getMPG() const;
