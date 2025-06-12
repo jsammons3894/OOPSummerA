@@ -1,4 +1,4 @@
-#include "Point3D.h"
+#include "point3D.h"
 
 Point3D::Point3D(int x, int y, int z, const string& tag) : Point(x, y, tag){
     this->z = z;

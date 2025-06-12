@@ -2,7 +2,7 @@
 #define POINT3D_H
 
 #include <iostream>
-#include "Point.h"
+#include "point.h"
 
 class Point3D : public Point {
     public:

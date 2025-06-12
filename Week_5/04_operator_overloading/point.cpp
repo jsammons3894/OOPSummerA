@@ -2,7 +2,7 @@
 Page
 1
 of 2
-#include "Point.h"
+#include "point.h"
 #include <string>
 #include <cstring>
 #include <iostream>

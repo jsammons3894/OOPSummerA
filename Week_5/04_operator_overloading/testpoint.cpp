@@ -1,4 +1,4 @@
-#include "Point.h"
+#include "point.h"
 #include <iostream>
 int main() {
 Point p1(3, 4, "fisrt");
