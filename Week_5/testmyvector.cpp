@@ -22,7 +22,7 @@ int main(){
     myVector<char>* charvec = new myVector<char>(10);
 
     //insert a couple characters into the vectors
-    for (i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) {
         charvec -> push_back(i + 'a');
     }
 
