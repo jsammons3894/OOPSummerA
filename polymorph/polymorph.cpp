@@ -2,35 +2,63 @@
 
 class Gun {
     public:
-        virtual void shoot() const {
+        virtual void use() const {
             std::cout << "BANG!" << std::endl;
         }
 };
 
 class MachineGun : public Gun {
     public:
-        void shoot() const override {
+        void use() const override {
             int magazine = 50;
             while (magazine--) {
-                Gun::shoot();
+                Gun::use();
             }
             std::cout << "*click*" << std::endl << std::endl;
         }
 };
 
-class Player {
-    public:
-        void shoot(const Gun& gun) const {
-            gun.shoot();
-        }
-};
 
 class Bazooka : public Gun {
     public:
 
-            void shoot() const override {
+            void use() const override {
                 std::cout << "BOOOOOM!" << std::endl;
             }
+};
+
+class Weapon {
+    public:
+    virtual void use() const  = 0; //pure virtual function, abstract class
+};
+
+class Knife : public Weapon {
+public:
+    void use() const override {
+        std::cout << "stabby stab" << std::endl;
+    }
+    bool is_stainless;
+};
+
+class Player {
+    public:
+        void attack(const Weapon& weapon) {
+            //Dynamic casting
+            const Knife* knife = dynamic_cast<const Knife*>(&weapon);
+            if (knife != NULL){
+                if (knife->is_stainless) {
+                    std::cout << "Stainless steel Knife! You can use it." << std::endl;
+                    weapon.use();
+                }
+                else{
+                    std::cout << "Not stainless steel- You cannot use this." << std::endl;
+                }
+            }
+            else {
+                std::cout << "Not a knife- cannot use.";
+            }
+            //weapon.use();
+        }
 };
 
 
@@ -38,6 +66,8 @@ int main() {
 
     Gun gun;
     MachineGun mGun;
+    Bazooka b;
+    Knife k;
 
     // gun.shoot();
     // mGun.shoot();
@@ -48,10 +78,15 @@ int main() {
     // gun2_ptr->shoot();
 
     Player p;
-    p.shoot(mGun); //pass player machine gun
+    p.attack(mGun); //pass player machine gun
 
-    Bazooka b; 
-    p.shoot(b); //pass player bazooka
+    p.attack(b); //pass player bazooka
+
+    p.attack(k); //pass player knife
+
+    p.attack(gun); //pass player gun
+
+
 
     return 0;
 }
