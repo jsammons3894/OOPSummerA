@@ -38,9 +38,3 @@ int main () {
 
     return 0;
 }
-
-// "What do we name our elf?" //Igor
-
-// "Legolas, from lord of the rings??" //Jacob
-
-// "I cannot spell that- Legoland?" //Igor
