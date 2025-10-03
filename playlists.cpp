@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include <cstdlib> // For rand()
-#include <ctime>   // For time()
+#include <cstdlib> 
+#include <ctime>   
 
 using namespace std;
 
@@ -22,7 +22,7 @@ private:
 
 public:
     Playlist() : head(nullptr), tail(nullptr), current(nullptr), size(0) {
-        srand(time(0)); // Seed for random number generator
+        srand(time(0)); //rendom generate for shuffle
     }
 
     void addSong(const string& title) {
@@ -112,7 +112,7 @@ public:
     }
 };
 
-void showMenu() {
+void showMenu() { //display menu :))
     cout << "\n--- MENU ---\n";
     cout << "1. Add Song\n";
     cout << "2. Remove Song\n";
