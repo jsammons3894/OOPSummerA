@@ -121,7 +121,7 @@ void showMenu() {
     cout << "5. Shuffle\n";
     cout << "6. Display Playlist\n";
     cout << "7. Exit\n";
-    cout << "\n------------\n";
+    cout << "\n------------";
     cout << "Select an option: ";
 }
 
