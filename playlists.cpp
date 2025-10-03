@@ -112,17 +112,6 @@ public:
     }
 };
 
-void showMenu() {
-    cout << "\n MENU \n";
-    cout << "1. Add Song\n";
-    cout << "2. Remove Song\n";
-    cout << "3. Next Song\n";
-    cout << "4. Previous Song\n";
-    cout << "5. Shuffle\n";
-    cout << "6. Display Playlist\n";
-    cout << "7. Exit\n";
-    cout << "Select an option: ";
-}
 
 int main() {
     Playlist playlist;
@@ -131,7 +120,7 @@ int main() {
 
     do {
 
-    cout << "\n--- Spotify-Style Playlist Menu ---\n";
+    cout << "\n--- MENU ---\n";
     cout << "1. Add Song\n";
     cout << "2. Remove Song\n";
     cout << "3. Next Song\n";
