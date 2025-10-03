@@ -140,7 +140,6 @@ int main() {
                 cout << "Enter song title to add: ";
                 getline(cin, title);
                 playlist.addSong(title);
-                cout << "Added:"<< title << endl;
                 break;
             case 2:
                 cout << "Enter song title to remove: ";
