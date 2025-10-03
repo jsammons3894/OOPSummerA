@@ -112,14 +112,7 @@ public:
     }
 };
 
-
-int main() {
-    Playlist playlist;
-    int choice;
-    string title;
-
-    do {
-
+void showMenu() {
     cout << "\n--- MENU ---\n";
     cout << "1. Add Song\n";
     cout << "2. Remove Song\n";
@@ -129,7 +122,15 @@ int main() {
     cout << "6. Display Playlist\n";
     cout << "7. Exit\n";
     cout << "Select an option: ";
+}
 
+int main() {
+    Playlist playlist;
+    int choice;
+    string title;
+
+    do {
+        showMenu();
         cin >> choice;
         cin.ignore();
 
