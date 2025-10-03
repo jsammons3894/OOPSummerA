@@ -161,7 +161,7 @@ int main() {
                 cout << "Exiting...\n";
                 break;
             default:
-                cout << "Invalid choice.\n";
+                cout << "\nINVALID CHOICE\n";
         }
 
     } while (choice != 7);
